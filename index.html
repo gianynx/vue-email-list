@@ -13,7 +13,7 @@
     <div id="app">
         <div class="container">
             <h1>{{titolo}}</h1>
-            <ul>
+            <ul v-if="emailArray.length === 10">
                 <li v-for="email in emailArray">{{email}}</li>
             </ul>
             <button @click="getData()">Get Email List</button>
